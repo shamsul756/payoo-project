@@ -13,7 +13,24 @@ function getBalance() {
 }
 
 // machine >>>value >> set balance
-function setBalance(value){
+function setBalance(value) {
     const balanceElement = document.getElementById("balance");
     balanceElement.innerText = value;
 }
+
+
+// machine id >> hide all >> show id 
+
+function showOnly(id) {
+    console.log("show only clicked");
+    const addMoney = document.getElementById("add-money");
+    const cashout = document.getElementById("cashout");
+    // hides all element 
+    addMoney.classList.add("hidden");
+    cashout.classList.add("hidden");
+    // show id element all 
+
+    const selected = document.getElementById(id);
+    selected.classList.remove("hidden");
+}
+
