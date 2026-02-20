@@ -13,7 +13,7 @@ document.getElementById('login-btn').addEventListener('click', function () {
     const pin = inputPin.value;
     console.log(pin);
     // no -3 match mobile and pin 
-    if(contracNumber == "01307510449" && pin == "1234"){
+    if( pin == "1234"){
         // true:: alert >> home 
         alert('login success ')
         window.location.replace("./script/home.html")
@@ -33,7 +33,7 @@ console.log(contracNumber);
 const inputPin = document.getElementById("input-pin");
 const pin = inputPin.value;
 console.log(pin);
-if(contracNumber == "01307510449" && pin == "1234"){
+if(pin == "1234"){
     alert("login successful");
     // window.location.replace(" ./script/home.html");
     window.location.assign("./script/home.html")
