@@ -77,23 +77,23 @@
                 <fieldset class="fieldset">
                     <label class="label text-neutral font-bold">Select Bank</label>
                     <select id="add-money-bank" class="select w-full bg-base-200 rounded-full">
-                        <option disabled selected>Select a Bank</option>
+                        <option  selected >Select a Bank</option>
                         <option value="DBBL">DBBL</option>
                         <option value="IBBL">IBBL</option>
-                        <option value="City Bank">City Bank</option>
+                        <option value="CITY">City Bank</option>
                     </select>
                     <br>
                     <label class="label text-neutral font-bold">Bank Account Number</label>
                     <input id="add-money-number" maxlength="11" minlength="11" type="text"
                         class="input rounded-full bg-base-200 w-full" placeholder="Enter Bank 11 Digit Number" />
-                        <br>
+                    <br>
                     <label class="label text-neutral font-bold">Amount to Add</label>
                     <input id="add-money-amount" type="number" class="input rounded-full bg-base-200 w-full"
                         placeholder="Enter Amount to Add" />
-                        <br>
+                    <br>
                     <label class="label text-neutral font-bold">4 Digits Pin</label>
-                    <input id="add-money-pin" type="password" maxlength="4" class="input rounded-full bg-base-200 w-full"
-                        placeholder="Enter 4 Digit Pin" />
+                    <input id="add-money-pin" type="password" maxlength="4"
+                        class="input rounded-full bg-base-200 w-full" placeholder="Enter 4 Digit Pin" />
                     <div><a class="link link-hover">Forgot password?</a></div>
                     <button id="add-money-btn" class="btn btn-primary mt-4 rounded-full ">Add Money</button>
                 </fieldset>
@@ -133,7 +133,7 @@
 
 
 
-
+    <script src="/script/addmoney.js"></script>
     <script src="/script/machine.js"></script>
     <script src="/script/cashout.js"></script>
 </body>
