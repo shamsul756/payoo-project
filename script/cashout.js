@@ -26,13 +26,39 @@ document.getElementById("cashout-btn").addEventListener("click", function () {
     if (pin === "1234") {
         alert("cashoutSuccessful");
      setBalance(newBalance);
-       
+    
+     // 1.catch history container
+        const history = document.getElementById("history-container")
+        // 2. create a new div
+        const newHistory = document.createElement("div");
+        // 3.add new div inner html
+        newHistory.innerHTML = ` 
+            <div class="transaction-card p-5 bg-base-200">
+                cashout $(cashoutAmount)Taka Success
+                to: ${cashoutNumber} 
+               at${new Date}
+                
+            </div>
+        `;
+newHistory.innerHTML = `
+ <div class = "transaction-card p-5 bg-base-200">
+ cashout ${cashoutAmount} Taka success to ${cashoutNumber}, at ${new Date()}
+ </div>
+ 
+`;
+  
+
+        // 4. append new div in history container
+        history.append(newHistory);
     }
     else {
         alert("invalid pin");
         return;
     }
-})
+    
+    }
+   
+)
 // document.getElementById("cashout-btn").addEventListener("click", function () {
 //
 //     const cashoutNumberInput = document.getElementById("cashout-number");

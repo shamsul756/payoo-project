@@ -1,5 +1,5 @@
- document.getElementById("add-money-btn").addEventListener("click",function(){
-        // 1.bank account get 
+document.getElementById("add-money-btn").addEventListener("click", function () {
+    // 1.bank account get 
     const bankAccount = getValueFromInput("add-money-bank");
     if (bankAccount === "Select a Bank") {
         alert("please select a bank");
@@ -16,7 +16,7 @@
     const newBalance = getBalance() + Number(amount);
     console.log(newBalance);
 
- 
+
 
     //  pin varify
     const pin = getValueFromInput("add-money-pin");
@@ -30,8 +30,8 @@
         const history = document.getElementById("history-container")
         // 2. create a new div
         const newHistory = document.createElement("div");
-         // 3.add new div inner html
-     newHistory.innerHTML = ` 
+        // 3.add new div inner html
+        newHistory.innerHTML = ` 
             <div class="transaction-card p-5 bg-base-200">
                 <h4 class="font-bold">Add Money Success</h4>
                 <p>From: ${bankAccount} (${accountNumber})</p>
@@ -39,18 +39,18 @@
                 <p class="text-green-600 font-bold">+$${amount}</p>
             </div>
         `;
-          
-  
+
+
 
         // 4. append new div in history container
         history.append(newHistory);
-  }
+    }
     else {
         alert("invalid pin");
         return;
     }
-    })
-    
+})
+
 
 
 

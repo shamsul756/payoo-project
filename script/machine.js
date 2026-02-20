@@ -25,9 +25,11 @@ function showOnly(id) {
     console.log("show only clicked");
     const addMoney = document.getElementById("add-money");
     const cashout = document.getElementById("cashout");
+    const history = document.getElementById("history")
     // hides all element 
     addMoney.classList.add("hidden");
     cashout.classList.add("hidden");
+    history.classList.add("hidden");
     // show id element all 
 
     const selected = document.getElementById(id);
